@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <title>Mysuru Assistant</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-align: left;
+      }
+      df-messenger {
+        --df-messenger-bot-message: #add8e6;
+        --df-messenger-button-titlebar-color: #00008b;
+        --df-messenger-button-titlebar-font-color: #fff;
+        --df-messenger-chat-background-color: #fff;
+        --df-messenger-font-color: #000;
+        /*--df-messenger-input-box-color: grey;*/
+        /*--df-messenger-input-font-color: #000;*/
+        /*--df-messenger-input-placeholder-font-color: #000;*/
+        --df-messenger-minimized-chat-close-icon-color: #0000ff;
+        --df-messenger-send-icon: #00008b;
+        --df-messenger-user-message: #fff;
+      }
+      .container { 
+        height: 300px;
+        position: relative;
+        border: 3px solid green; 
+      }
+      .vertical-center {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: blue">Welcome to Mysuru!</h1>
+    <p>
+      Please click on the small circle on the bottom right corner to start the
+      chatbot
+    </p>
+    
+<df-messenger
+  chat-title="Mysuru Assistant"
+  agent-id="b026e6ec-0577-49fd-8bdd-948cd865ab88"
+  language-code="en"
+></df-messenger>
+  </body>
+</html>
