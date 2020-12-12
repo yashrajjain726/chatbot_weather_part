@@ -30,7 +30,7 @@ class weather():
             table_html += "<tr>" +\
                     "<td>" + c['dt_txt'] + "</td> " +\
                     "<td>" + c['weather'][0]['description']  +"</td> " +\
-                    "<td>" + str((int)(((c['main']['temp']-32)*5)/9)) +'°'+ " </td> " +\
+                    "<td>" + str((int)(c['main']['temp']-273.15)) +'°'+ " </td> " +\
                     "<td>" + str(c['main']['pressure']) +'hPa' +" </td> " +\
                     "<td>" + str(c['main']['humidity']) + '%' + " </td> " +\
                     "</tr>"
